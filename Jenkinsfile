@@ -14,25 +14,25 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Package') {
             steps {
-                sh 'mvn package'
+                bat 'mvn package'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'scp target/spring-boot-app.jar user@your-server:/path/to/deploy'
+                bat 'scp target/spring-boot-app.jar user@your-server:/path/to/deploy'
             }
         }
     }
