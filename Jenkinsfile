@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.9.8' // Ensure this matches the Maven version installed on your Jenkins server
+        maven 'Maven3.9.8' // Ensure this matches the Maven version installed on your Jenkins server
     }
 
     stages {
